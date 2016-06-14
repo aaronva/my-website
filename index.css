@@ -14,7 +14,9 @@ body {
 
 #main-header h1 {
     color: white;
-    font-size: 58pt;
+    font-size: 40pt;
+    margin-top:     .6em;
+    margin-bottom:  .4em;
     /*flex: 1;*/
 }
 
@@ -36,7 +38,8 @@ h1 {
 
 #nav-bar div {
     /*background-color: purple;*/
-    margin: 0.8em;
+    padding: 0.8em;
+    cursor: pointer;
 }
 
 #nav-bar div:hover {
