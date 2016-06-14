@@ -3,17 +3,29 @@
  */
 
 var app = angular.module('app', []);
-app.controller('main', function($scope, global) {
+app.controller('main', function($scope, globals) {
     // Controller stuff
-    $scope.global = global;
+    $scope.globals = globals;
+});
+app.controller('navBar', function($scope, globals) {
+    // Controller stuff
+    var pageLookup = {
+        aboutMe: {
+            templateUrl: 'about-me/about-me.html'
+        },
+        portfolio: {
+            templateUrl: 'portfolio/portfolio.html'
+        }
+    };
 
-    global.activePage = {
-        templateUrl: 'about-me/about-me.html'
+    $scope.setCurPage = function (current) {
+        globals.activePage = pageLookup[current];
     }
 });
-app.factory('global', function() {
+app.factory('globals', function() {
     return {
-        // templateUrl: 'about-me/about-me.html'
-        // templateUrl: 'sidebar/sidebar.html'
+        activePage: {
+            templateUrl: 'about-me/about-me.html'
+        }
     }
 });
