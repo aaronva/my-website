@@ -5,8 +5,8 @@
 var app = angular.module('app', ['ngRoute']);
 app.config(function($routeProvider) {
     $routeProvider
-        .when('/about-me', {
-            templateUrl: 'about-me/about-me.html',
+        .when('/about-me-1', {
+            templateUrl: 'about-me-1/about-me.html',
             controller: 'AboutMeController'
         })
         .when('/portfolio', {
@@ -27,7 +27,7 @@ app.controller('PortfolioController', function($scope) {
 //     // Controller stuff
 //     var pageLookup = {
 //         aboutMe: {
-//             templateUrl: 'about-me/about-me.html'
+//             templateUrl: 'about-me-1/about-me-1.html'
 //         },
 //         portfolio: {
 //             templateUrl: 'portfolio/portfolio.html'
@@ -41,7 +41,7 @@ app.controller('PortfolioController', function($scope) {
 // app.factory('globals', function() {
 //     return {
 //         activePage: {
-//             templateUrl: 'about-me/about-me.html'
+//             templateUrl: 'about-me-1/about-me-1.html'
 //         }
 //     }
 // });
