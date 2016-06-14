@@ -3,6 +3,9 @@
  */
 
     var app = angular.module('app', []);
-    app.controller('myCtrl', function() {
-        // Controller stuff 
+    app.controller('main', function($scope) {
+        // Controller stuff
+        $scope.activePage = {
+            templateUrl: 'about-me/about-me.html'
+        }
     });
