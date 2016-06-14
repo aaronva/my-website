@@ -3,7 +3,7 @@
  */
 
 var app = angular.module('app', []);
-app.config(function($routeProvider, $locationProvider) {
+app.config(function($routeProvider) {
     $routeProvider
         .when('/about-me', {
             templateUrl: 'about-me/about-me.html',
@@ -15,7 +15,7 @@ app.config(function($routeProvider, $locationProvider) {
         });
 });
 
-app.controller('main', function($scope, globals) {
+app.controller('main', function($scope) {
     // Controller stuff
     // $scope.globals = globals;
 });
