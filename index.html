@@ -40,8 +40,11 @@
 
     <script src="app.js"></script>
 </head>
-<body id="main" ng-app="app" ng-cloak>
-    <div id="sidebar" ng-include="'sidebar/sidebar.html'"></div>
+<body ng-app="app" ng-cloak>
     <div id="full-header" ng-include="'header/header.html'"></div>
+    <div id="main">
+        <div class="sidebar" ng-include="'sidebar/sidebar.html'"></div>
+        <div id="content"></div>
+    </div>
 </body>
 </html>
