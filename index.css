@@ -53,8 +53,14 @@ h1 {
     background-color: #2d2d2d;
 }
 
+.horizontal-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
 #nav-bar {
     display: flex;
+    flex: 1;
 }
 
 #nav-bar .sidebar {
@@ -68,6 +74,7 @@ h1 {
 
 #nav-bar div:focus {
     background-color: #606060;
+    color: #ff9090;
 }
 
 #nav-bar div:hover {
