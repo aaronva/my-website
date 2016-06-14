@@ -135,7 +135,7 @@ h2, h3 {
     justify-content: center;
 }
 
-.portfolio-item h3 span {
+.portfolio-item h3 .status {
     /*font-weight: ;*/
     font-style: italic;
     float:right;
