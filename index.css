@@ -111,6 +111,7 @@ h2, h3 {
 #content {
     flex: 1;
     margin: 16px;
+    overflow: auto;
 }
 
 .portfolio-item {
@@ -128,7 +129,7 @@ h2, h3 {
 
 .portfolio-item p {
     margin-top: 4px;
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
 
 .portfolio-item .sources {
@@ -150,7 +151,7 @@ h2, h3 {
 
 .portfolio-item .sources a.source {
     flex: 1;
-    max-width: 7em;
+    max-width: 7.5em;
     cursor: pointer;
     color: #aa0000;
     font-weight: bold;
@@ -164,7 +165,7 @@ h2, h3 {
 }
 
 .portfolio-item .sources a.source span {
-    margin-left: 0.2em;
+    margin-left: 0.3em;
 }
 
 .portfolio-item .sources a.source:focus {
