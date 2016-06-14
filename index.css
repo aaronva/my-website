@@ -1,12 +1,20 @@
-#header {
+body {
+    font-family: Arial, sans-serif;
+}
+
+#main-header {
     background-color: #2d2d2d;
     color: #f3f3f3;
     display: flex;
 }
 
-#name {
+#main-header.header {
     color: white;
     font-size: 108pt;
+}
+
+.header {
+    font-family: Arial, sans-serif;
 }
 
 #main {
