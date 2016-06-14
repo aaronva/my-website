@@ -1,10 +1,11 @@
-body {
+#main {
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     color: #2d2d2d;
+    max-width: 500px;
 }
 
 #full-header {
@@ -32,7 +33,7 @@ body {
 #sidebar {
 }
 
-#main {
+#body {
     display: flex;
     flex: 1;
     align-items: stretch;
