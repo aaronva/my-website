@@ -5,7 +5,7 @@
 var app = angular.module('app', []);
 app.controller('main', function($scope, global) {
     // Controller stuff
-    $scope.activePage = global.activePage;
+    $scope.global = global;
 
     global.activePage = {
         templateUrl: 'about-me/about-me.html'
