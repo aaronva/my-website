@@ -123,6 +123,7 @@ h2, h3 {
 
 .portfolio-item h3 {
     margin: 0;
+    position: relative;
 }
 
 .portfolio-item p {
@@ -136,10 +137,17 @@ h2, h3 {
 }
 
 .portfolio-item h3 .status {
-    /*font-weight: ;*/
     font-style: italic;
-    float:right;
+    /* float: right; */
+    color: #2c2c2c;
+    font-size: medium;
+    /*margin-bottom: 0;*/
+    /*margin-top: auto;*/
+    position: absolute;
+    bottom: 0;
+    right: 8px;
 }
+
 .portfolio-item .sources a.source {
     flex: 1;
     max-width: 7em;
@@ -153,6 +161,10 @@ h2, h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.portfolio-item .sources a.source span {
+    margin-left: 0.2em;
 }
 
 .portfolio-item .sources a.source:focus {
