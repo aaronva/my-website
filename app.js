@@ -14,7 +14,6 @@ app.config(function($routeProvider) {
             // controller: 'PortfolioController'
         });
 });
-
 app.controller('main', function($scope) {
     // Controller stuff
     // $scope.globals = globals;
