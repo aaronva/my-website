@@ -81,18 +81,23 @@ h1 {
     text-decoration: inherit;
 }
 
-#nav-bar a:focus {
+#nav-bar a.selected {
+    font-weight: bold;
+    /*cursor: pointer*/
+}
+
+#nav-bar a:focus:not(.selected) {
     background-color: #606060;
     border: none;
 }
 
-#nav-bar a:hover {
+#nav-bar a:hover:not(.selected) {
     background-color: #606060;
     /*color: #ffd0d0;*/
     /*font-weight: bold;*/
 }
 
-#nav-bar a:active {
+#nav-bar a:active:not(.selected) {
     background-color: #808080;
 }
 
