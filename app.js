@@ -21,11 +21,11 @@ app.controller('main', function($scope) {
     // Controller stuff
     // $scope.globals = globals;
 });
-app.controller('NavBarController', function ($scope, $route) {
-    console.log($route.current);
+app.controller('NavBarController', function ($scope, $state) {
+    console.log($state);
 
     $scope.test = function () {
-        console.log($route.current);
+        console.log($state);
     }
 });
 app.controller('AboutMeController', function($scope) {
