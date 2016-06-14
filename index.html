@@ -45,8 +45,8 @@
     <div id="main" ng-controller="main">
         <div class="sidebar" ng-include="'sidebar/sidebar.html'"></div>
         <div class="accent-line"></div>
-        {{ activePage }}
-        <div  id="content" ng-include="activePage"></div>
+        <!--{{ activePage }}-->
+        <div  id="content" ng-include="activePage.templateUrl"></div>
     </div>
 </body>
 </html>
