@@ -4,6 +4,7 @@ body {
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
+    backgroud-color: #505050;
 }
 
 #main {
