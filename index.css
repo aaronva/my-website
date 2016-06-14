@@ -17,7 +17,10 @@ body {
     font-size:  40pt;
     margin-top:     .6em;
     margin-bottom:  .4em;
-    /*flex: 1;*/
+}
+
+#sidebar {
+    width: 25%;
 }
 
 h1 {
