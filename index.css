@@ -37,15 +37,21 @@ h1 {
 }
 
 #nav-bar div {
-    /*background-color: purple;*/
     padding: 0.8em;
     cursor: pointer;
+}
+
+#nav-bar div:focus {
+    background-color: #606060;
+}
+
+#nav-bar div:active {
+    background-color: #808080;
 }
 
 #nav-bar div:hover {
     background-color: #606060;
 }
-
 
 #main {
 
