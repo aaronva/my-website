@@ -3,7 +3,7 @@
  */
 
 var app = angular.module('app', ['ui.router']);
-app.config(function($stateProvider, $locationProvider) {
+app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('about-me', {
             url: "/about-me",
@@ -14,6 +14,7 @@ app.config(function($stateProvider, $locationProvider) {
             templateUrl: "portfolio/portfolio.html"
         });
 
+    $urlRouterProvider.otherwise('/about-me');
 
     // $locationProvider.html5Mode(true);
 });
