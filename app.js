@@ -7,17 +7,22 @@ app.config(function($routeProvider) {
     $routeProvider
         .when('/about-me', {
             templateUrl: 'about-me/about-me.html',
-            // controller: 'AboutMeController',
+            controller: 'AboutMeController'
         })
         .when('/portfolio', {
             templateUrl: 'portfolio/portfolio.html',
-            // controller: 'PortfolioController'
+            controller: 'PortfolioController'
         });
 });
 app.controller('main', function($scope) {
     // Controller stuff
     // $scope.globals = globals;
 });
+app.controller('AboutMeController', function($scope) {
+});
+app.controller('PortfolioController', function($scope) {
+});
+
 // app.controller('navBar', function($scope, globals) {
 //     // Controller stuff
 //     var pageLookup = {
