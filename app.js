@@ -2,8 +2,8 @@
  * Created by aaron on 2016-05-23.
  */
 
-var app = angular.module('app', ['ngRoute']);
-app.config(function($routeProvider, $stateProvider, $locationProvider) {
+var app = angular.module('app', ['ui.router']);
+app.config(function($stateProvider, $locationProvider) {
     $stateProvider
         .state('about-me', {
             url: "/about-me",
