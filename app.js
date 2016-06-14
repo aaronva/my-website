@@ -15,7 +15,7 @@ app.config(function($stateProvider, $locationProvider) {
         });
 
 
-    $locationProvider.html5Mode(true);
+    // $locationProvider.html5Mode(true);
 });
 app.controller('main', function($scope) {
     // Controller stuff
