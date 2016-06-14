@@ -135,7 +135,7 @@ h2, h3 {
     justify-content: center;
 }
 
-.portfolio-item .sources .a.source {
+.portfolio-item .sources a.source {
     flex: 1;
     max-width: 20px;
     cursor: pointer;
