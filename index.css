@@ -135,21 +135,25 @@ h2, h3 {
     justify-content: center;
 }
 
+.portfolio-item h3 span {
+    /*font-weight: ;*/
+    font-style: italic;
+    float:right;
+}
 .portfolio-item .sources a.source {
     flex: 1;
     max-width: 7em;
     cursor: pointer;
-    color: inherit;
+    color: #aa0000;
+    font-weight: bold;
     text-decoration: inherit;
+    border-radius: 5px;
     padding: 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
-
-/*a.source span {*/
-    /**/
-/*}*/
 
 .portfolio-item .sources a.source:focus {
     background-color: #f0f0f0;
@@ -158,4 +162,8 @@ h2, h3 {
 
 .portfolio-item .sources a.source:hover {
     background-color: #eeeeee;
+}
+
+.portfolio-item .sources a.source:active {
+    background-color: #e0e0e0;
 }
