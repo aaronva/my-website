@@ -137,10 +137,11 @@ h2, h3 {
 
 .portfolio-item .sources a.source {
     flex: 1;
-    max-width: 20px;
+    max-width: 7em;
     cursor: pointer;
     color: inherit;
     text-decoration: inherit;
+    padding: 0.2em;
 }
 
 .portfolio-item .sources a.source:focus {
