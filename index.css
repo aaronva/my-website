@@ -1,16 +1,19 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 #main-header {
     background-color: #2d2d2d;
     color: #f3f3f3;
     display: flex;
+    align-items: center;
 }
 
 #main-header h1 {
     color: white;
-    font-size: 108pt;
+    font-size: 58pt;
+    flex: 1;
 }
 
 h1 {
