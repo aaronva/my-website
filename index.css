@@ -74,23 +74,25 @@ h1 {
     align-self: flex-start;
 }
 
-#nav-bar div:not(.accent-line) {
+#nav-bar a {
     padding: 0.8em;
     cursor: pointer;
+    color: inherit;
+    text-decoration: inherit;
 }
 
-#nav-bar div:focus {
+#nav-bar a:focus {
     background-color: #606060;
     border: none;
 }
 
-#nav-bar div:hover {
+#nav-bar a:hover {
     background-color: #606060;
     /*color: #ffd0d0;*/
     /*font-weight: bold;*/
 }
 
-#nav-bar div:active {
+#nav-bar a:active {
     background-color: #808080;
 }
 
