@@ -103,4 +103,5 @@ h1 {
 
 #content {
     flex: 1;
+    margin: 16px;
 }
