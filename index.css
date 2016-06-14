@@ -1,9 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    backgroud-color: #505050;
+}
+
+#main {
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    color: #2d2d2d;
+    max-width: 1000px;
 }
 
 #full-header {
@@ -31,15 +41,21 @@ body {
 #sidebar {
 }
 
-#main {
+#body {
     display: flex;
     flex: 1;
     align-items: stretch;
+    background-color: #fafafa;
 }
 
 h1 {
     display: inline-block;
     font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+    color: #cc0000;
+    margin-bottom: 0;
 }
 
 .accent-line {
@@ -87,20 +103,90 @@ h1 {
 }
 
 #nav-bar a:focus:not(.selected) {
-    background-color: #606060;
+    background-color: #808080;
     border: none;
 }
 
 #nav-bar a:hover:not(.selected) {
-    background-color: #606060;
+    background-color: #808080;
     /*color: #ffd0d0;*/
     /*font-weight: bold;*/
 }
 
 #nav-bar a:active:not(.selected) {
-    background-color: #808080;
+    background-color: #a0a0a0;
 }
 
 #content {
     flex: 1;
+    margin: 16px;
+    overflow: auto;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.portfolio-item h3 {
+    margin: 0;
+    position: relative;
+}
+
+.portfolio-item p {
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.portfolio-item .sources {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item h3 .status {
+    font-style: italic;
+    /* float: right; */
+    color: #2c2c2c;
+    font-size: medium;
+    /*margin-bottom: 0;*/
+    /*margin-top: auto;*/
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+}
+
+.portfolio-item .sources a.source {
+    flex: 1;
+    max-width: 7.5em;
+    cursor: pointer;
+    color: #aa0000;
+    font-weight: bold;
+    text-decoration: inherit;
+    border-radius: 5px;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.portfolio-item .sources a.source span {
+    margin-left: 0.3em;
+}
+
+.portfolio-item .sources a.source:focus {
+    background-color: #f0f0f0;
+    border: none;
+}
+
+.portfolio-item .sources a.source:hover {
+    background-color: #eeeeee;
+}
+
+.portfolio-item .sources a.source:active {
+    background-color: #e0e0e0;
 }

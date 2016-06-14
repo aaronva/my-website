@@ -3,7 +3,7 @@
  */
 
 var app = angular.module('app', ['ui.router']);
-app.config(function($stateProvider, $locationProvider) {
+app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('about-me', {
             url: "/about-me",
@@ -14,8 +14,9 @@ app.config(function($stateProvider, $locationProvider) {
             templateUrl: "portfolio/portfolio.html"
         });
 
+    $urlRouterProvider.otherwise('/#/about-me');
 
-    $locationProvider.html5Mode(true);
+    // $locationProvider.html5Mode(true);
 });
 app.controller('main', function($scope) {
     // Controller stuff
@@ -24,7 +25,6 @@ app.controller('main', function($scope) {
 app.controller('NavBarController', function ($scope, $state) {
     $scope.selected = function(state) {
         return state === $state.current.name;
-        console.log($state.current);
     };
 });
 app.controller('AboutMeController', function($scope) {

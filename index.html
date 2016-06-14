@@ -2,8 +2,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Erin Vaartjes</title>
-    <base href="/my-website/"> <!-- TODO: This is testing only! Don't forget to change before final version! -->
-    <!--<base href="/"> &lt;!&ndash; Not testing version &ndash;&gt;-->
+    <base href="/">
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/049649e027.js"></script>
 
     <!-- Icon Setup -->
     <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png?v=A00wmR68Gd">
@@ -45,12 +47,14 @@
     <script src="app.js"></script>
 </head>
 <body ng-app="app" ng-cloak>
+<div id="main">
     <div id="full-header" ng-include="'header/header.html'"></div>
-    <div id="main" ng-controller="main">
+    <div id="body" ng-controller="main">
         <div class="sidebar" ng-include="'sidebar/sidebar.html'"></div>
         <div class="accent-line"></div>
         <!--{{ activePage }}-->
         <div  id="content" ui-view></div>
     </div>
+</div>
 </body>
 </html>
