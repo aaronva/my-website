@@ -142,11 +142,14 @@ h2, h3 {
     color: inherit;
     text-decoration: inherit;
     padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-a.source span {
-    margin: auto;
-}
+/*a.source span {*/
+    /**/
+/*}*/
 
 .portfolio-item .sources a.source:focus {
     background-color: #f0f0f0;
