@@ -22,10 +22,14 @@ app.controller('main', function($scope) {
     // $scope.globals = globals;
 });
 app.controller('NavBarController', function ($scope, $state) {
-    console.log($state);
+    console.log($state.current);
+
+    $scope.selected = function(state) {
+        return state === $state.current.name;
+    };
 
     $scope.test = function () {
-        console.log($state);
+        console.log($state.current);
     }
 });
 app.controller('AboutMeController', function($scope) {
