@@ -14,7 +14,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: "portfolio/portfolio.html"
         });
 
-    $urlRouterProvider.otherwise('/about-me');
+    $urlRouterProvider.otherwise('/#/about-me');
 
     // $locationProvider.html5Mode(true);
 });
