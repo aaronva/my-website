@@ -80,15 +80,15 @@ h1 {
 
 #nav-bar div:focus {
     background-color: #606060;
+    border: none;
 }
 
 #nav-bar div:hover {
     background-color: #606060;
+    color: #ffa0a0;
+    /*font-weight: bold;*/
 }
 
 #nav-bar div:active {
     background-color: #808080;
-    color: #ff9090;
-    font-weight: bold;
-    border: none;
 }
