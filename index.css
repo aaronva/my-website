@@ -6,6 +6,7 @@ body {
 
 #full-header {
     display: flex;
+    align-items: flex-start;
 }
 
 #main-header {
@@ -37,6 +38,10 @@ h1 {
     min-height: 0.4em;
     min-width: 0.4em;
     align-self: stretch;
+}
+
+.sidebar {
+    width: 50px;
 }
 
 #nav-bar {
