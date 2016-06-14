@@ -103,18 +103,18 @@ h2, h3 {
 }
 
 #nav-bar a:focus:not(.selected) {
-    background-color: #606060;
+    background-color: #808080;
     border: none;
 }
 
 #nav-bar a:hover:not(.selected) {
-    background-color: #606060;
+    background-color: #808080;
     /*color: #ffd0d0;*/
     /*font-weight: bold;*/
 }
 
 #nav-bar a:active:not(.selected) {
-    background-color: #808080;
+    background-color: #a0a0a0;
 }
 
 #content {
