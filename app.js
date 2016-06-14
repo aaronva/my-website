@@ -5,7 +5,9 @@
     var app = angular.module('app', []);
     app.controller('main', function($scope) {
         // Controller stuff
-        $scope.activePage = 'about-me/about-me.html'
+        $scope.activePage = 'about-me/about-me.html';
         //     templateUrl: 'about-me/about-me.html'
         // }
+
+        console.log('Testing');
     });
