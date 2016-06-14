@@ -3,15 +3,15 @@
  */
 
 var app = angular.module('app', []);
-app.controller('main', function($scope, activePage) {
+app.controller('main', function($scope, global) {
     // Controller stuff
-    $scope.activePage = activePage;
+    $scope.activePage = global.activePage;
 
-    activePage = {
+    global.activePage = {
         templateUrl: 'about-me/about-me.html'
     }
 });
-app.factory('activePage', function() {
+app.factory('global', function() {
     return {
         // templateUrl: 'about-me/about-me.html'
         // templateUrl: 'sidebar/sidebar.html'
