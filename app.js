@@ -3,9 +3,13 @@
  */
 
     var app = angular.module('app', []);
-    app.controller('main', function($scope) {
+    app.controller('main', function($scope, global) {
         // Controller stuff
-        $scope.activePage = {
+        $scope.activePage = global.activePage;
+    });
+    app.factory('global', function() {
+        this.activePage = {
             templateUrl: 'about-me/about-me.html'
         }
     });
+
