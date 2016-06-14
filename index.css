@@ -111,3 +111,17 @@ h1 {
     flex: 1;
     margin: 16px;
 }
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.portfolio-item h3 {
+    padding-top: 0;
+    /*margin-top: 0;*/
+
+}
