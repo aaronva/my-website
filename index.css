@@ -29,7 +29,6 @@ body {
     margin-bottom:  .4em;
 }
 
-
 #sidebar {
 }
 
@@ -120,6 +119,7 @@ h2, h3 {
     background-color: #fafafa;
     border-radius: 8px;
     padding: 16px;
+    margin-bottom: 16px;
 }
 
 .portfolio-item h3 {

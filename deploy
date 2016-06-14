@@ -3,6 +3,6 @@ branch=$(git branch | grep \*\ gh-pages | wc -l)
 if [ $branch -gt "0" ]
   then
     git add .
-    git commit -m "Deploy"
+    git commit -m "Deploy Test"
     git push
 fi
