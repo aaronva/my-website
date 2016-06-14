@@ -141,7 +141,11 @@ h2, h3 {
     cursor: pointer;
     color: inherit;
     text-decoration: inherit;
-    padding: 0.2em;
+    padding: 0.5em;
+}
+
+a.source span {
+    margin: auto;
 }
 
 .portfolio-item .sources a.source:focus {
