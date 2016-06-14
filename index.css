@@ -25,8 +25,9 @@ h1 {
 
 .accent-line {
     color: #cc0000;
-    min-height: 0.1em;
-    min-width: 0.1em;
+    min-height: 0.4em;
+    min-width: 0.4em;
+    align-self: stretch;
 }
 
 #nav-bar {
@@ -34,8 +35,13 @@ h1 {
 }
 
 #nav-bar div {
-    color: purple;
+    /*background-color: purple;*/
 }
+
+#nav-bar div:hover {
+    background-color: #808080;
+}
+
 
 #main {
 
