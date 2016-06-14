@@ -5,4 +5,4 @@
     /**
      * You must include the dependency on 'ngMaterial'
      */
-    angular.module('App', ['ngMaterial']);
+    angular.module('App');
