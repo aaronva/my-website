@@ -7,16 +7,17 @@ body {
     background-color: #2d2d2d;
     color: #f3f3f3;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 #main-header h1 {
     color: white;
     font-size: 58pt;
-    flex: 1;
+    /*flex: 1;*/
 }
 
 h1 {
+    display: inline-block;
     font-family: Arial, sans-serif;
 }
 
