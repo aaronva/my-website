@@ -1,3 +1,9 @@
-git add .
-git commit -m "Deploy"
-git push
+branch=$(git branch | grep \*\ gh-pages | wc -l)
+
+if [ $branch ]
+  then
+    git add .
+    git commit -m "Deploy"
+    git push
+fi
+echo branch
