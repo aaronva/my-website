@@ -5,4 +5,7 @@
     /**
      * You must include the dependency on 'ngMaterial'
      */
-    angular.module('App', []);
+    var app = angular.module('app', []);
+    app.controller('myCtrl', function($scope) {
+        // Stuff
+    });
