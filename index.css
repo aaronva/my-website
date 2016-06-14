@@ -74,23 +74,30 @@ h1 {
     align-self: flex-start;
 }
 
-#nav-bar div:not(.accent-line) {
+#nav-bar a {
     padding: 0.8em;
     cursor: pointer;
+    color: inherit;
+    text-decoration: inherit;
 }
 
-#nav-bar div:focus {
+#nav-bar a.selected {
+    font-weight: bold;
+    cursor: default
+}
+
+#nav-bar a:focus:not(.selected) {
     background-color: #606060;
     border: none;
 }
 
-#nav-bar div:hover {
+#nav-bar a:hover:not(.selected) {
     background-color: #606060;
     /*color: #ffd0d0;*/
     /*font-weight: bold;*/
 }
 
-#nav-bar div:active {
+#nav-bar a:active:not(.selected) {
     background-color: #808080;
 }
 
