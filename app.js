@@ -15,7 +15,7 @@ app.config(function($stateProvider, $locationProvider) {
         });
 
 
-    $locationProvider.html5Mode(true);
+    // $locationProvider.html5Mode(true);
 });
 app.controller('main', function($scope) {
     // Controller stuff
@@ -24,7 +24,6 @@ app.controller('main', function($scope) {
 app.controller('NavBarController', function ($scope, $state) {
     $scope.selected = function(state) {
         return state === $state.current.name;
-        console.log($state.current);
     };
 });
 app.controller('AboutMeController', function($scope) {
