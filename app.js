@@ -3,16 +3,17 @@
  */
 
 var app = angular.module('app', ['ngRoute']);
-app.config(function($routeProvider, $locationProvider) {
-    $routeProvider
-        .when('/about-me', {
-            templateUrl: 'about-me/about-me.html',
-            controller: 'AboutMeController'
+app.config(function($routeProvider, $stateProvider, $locationProvider) {
+    $stateProvider
+        .state('about-me', {
+            url: "/about-me",
+            templateUrl: 'about-me/about-me.html'
         })
-        .when('/portfolio', {
-            templateUrl: 'portfolio/portfolio.html',
-            controller: 'PortfolioController'
+        .state('portfolio', {
+            url: "/portfolio",
+            templateUrl: "portfolio/portfolio.html"
         });
+
 
     $locationProvider.html5Mode(true);
 });
