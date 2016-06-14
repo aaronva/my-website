@@ -2,7 +2,7 @@
  * Created by aaron on 2016-05-23.
  */
 
-var app = angular.module('app', []);
+var app = angular.module('app', ['ngRoute']);
 app.config(function($routeProvider) {
     $routeProvider
         .when('/about-me', {
