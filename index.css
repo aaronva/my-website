@@ -44,6 +44,7 @@ body {
     display: flex;
     flex: 1;
     align-items: stretch;
+    background-color: #fafafa;
 }
 
 h1 {
@@ -124,7 +125,7 @@ h2, h3 {
 .portfolio-item {
     display: flex;
     flex-direction: column;
-    background-color: #fafafa;
+    background-color: #f0f0f0;
     border-radius: 8px;
     padding: 16px;
     margin-bottom: 16px;
