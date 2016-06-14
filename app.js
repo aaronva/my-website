@@ -22,6 +22,10 @@ app.controller('main', function($scope) {
 });
 app.controller('NavBarController', function ($scope, $route) {
     console.log($route.current);
+
+    $scope.test = function () {
+        console.log($route.current);
+    }
 });
 app.controller('AboutMeController', function($scope) {
 });
