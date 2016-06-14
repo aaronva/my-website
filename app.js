@@ -3,7 +3,7 @@
  */
 
 var app = angular.module('app', ['ngRoute']);
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/about-me', {
             templateUrl: 'about-me-1/about-me.html',
@@ -13,6 +13,8 @@ app.config(function($routeProvider) {
             templateUrl: 'portfolio/portfolio.html',
             controller: 'PortfolioController'
         });
+
+    $locationProvider.html5Mode(true);
 });
 app.controller('main', function($scope) {
     // Controller stuff
