@@ -42,10 +42,11 @@
 </head>
 <body ng-app="app" ng-cloak>
     <div id="full-header" ng-include="'header/header.html'"></div>
-    <div id="main">
+    <div id="main" ng-controller="main">
         <div class="sidebar" ng-include="'sidebar/sidebar.html'"></div>
         <div class="accent-line"></div>
-        <div id="content" ng-include="activePage"></div>
+        {{ activePage }}
+        <div  id="content" ng-include="activePage"></div>
     </div>
 </body>
 </html>
