@@ -83,7 +83,7 @@ h1 {
 
 #nav-bar a.selected {
     font-weight: bold;
-    /*cursor: pointer*/
+    cursor: default
 }
 
 #nav-bar a:focus:not(.selected) {
