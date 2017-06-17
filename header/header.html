@@ -1,15 +1,11 @@
-<div class="sidebar"></div>
 <div id="main-header">
     <h1 id="name">
         Erin Vaartjes
     </h1>
     <div class="accent-line"></div>
-    <div class="horizontal-flex">
-        <div class="accent-line"></div>
-        <div id="nav-bar" ng-controller="NavBarController">
-            <a ui-sref="about-me" ng-class="{selected: selected('about-me')}">About Me</a>
-            <a ui-sref="portfolio" ng-class="{selected: selected('portfolio')}">Portfolio</a>
-            <!--<a>Test</a>-->
-        </div>
+    <div id="nav-bar" ng-controller="NavBarController">
+        <a ui-sref="about-me" ng-class="{selected: selected('about-me')}">About Me</a>
+        <a ui-sref="portfolio" ng-class="{selected: selected('portfolio')}">Portfolio</a>
+        <!--<a>Test</a>-->
     </div>
 </div>
